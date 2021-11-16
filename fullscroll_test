@@ -1,0 +1,15 @@
+
+
+int fullScroll;
+    if (dDT==1 or dDT==2 or dDT==4){fullScroll= (Disp.textWidth(msg)-(Disp.textWidth(msg)*0.14)) + (DWidth-32); } //untuk font lebar 5
+    else if (dDT==3){fullScroll= (Disp.textWidth(msg)+(Disp.textWidth(msg)*0.58)) + (DWidth); } //untuk font lebar 10 
+    else {fullScroll= Disp.textWidth(msg) + (DWidth-32); } // untuk font lebar 6
+    
+    
+    
+    catatan :  
+    - (Disp.textWidth(msg)*0.14) // - : untuk font kurang dari 6, 0.14 persetanse selisih font 5 dengan 6
+    + (Disp.textWidth(msg)*0.58) // + : untuk font lebih  dari 6, 0.58 persetanse selisih font 10 dengan 6
+    
+    
+    misal selisih 10% = 10/100 = 0.10
